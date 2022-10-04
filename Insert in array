@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main( )
+{
+    int pos,a[10],i,n,k;
+    printf("enter the number");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+        
+    }
+    printf("enter the position to insert");
+    scanf("%d",&pos);
+    printf("enter the element to insert");
+    scanf("%d",&k);
+    for(i=n-1;i>=pos;i--)
+    a[i]=a[i-1];
+    a[pos-1]=k;
+    printf("after insertion");
+    for(i=0;i<=n+1;i++)
+    {
+        printf("%d",a[i]);
+        
+    }
+    return 0;
+    
+}
